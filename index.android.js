@@ -39,7 +39,7 @@ _renderRow=(rowData)=> {
 
 _refreshData = ()=> {
   console.log('refresh data was called');
-  var endpoint = "https://herotalkies-staging.elasticbeanstalk.com/api/v2/general/new_releases";
+  var endpoint = '';
   fetch(endpoint)
   .then((response)=> response.json())
   .then((responseJSON)=>{
@@ -81,7 +81,7 @@ _renderHeader = ()=> {
 _renderFooter = ()=> {
   <View>
   <Text>
-  Data from herotalkies
+  Data from API
   </Text>
   </View>
 }
