@@ -32,7 +32,8 @@ _renderRow=(rowData)=> {
     <MovieItem
     name = {rowData.name}
     movieURL = {rowData.thumbnail_url}>
-   </MovieItem>
+   
+</MovieItem>
   );
 }
 
