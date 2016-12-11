@@ -32,14 +32,13 @@ _renderRow=(rowData)=> {
     <MovieItem
     name = {rowData.name}
     movieURL = {rowData.thumbnail_url}>
-   >
    </MovieItem>
   );
 }
 
 _refreshData = ()=> {
   console.log('refresh data was called');
-  var endpoint = "";
+  var endpoint = "https://herotalkies-staging.elasticbeanstalk.com/api/v2/general/new_releases";
   fetch(endpoint)
   .then((response)=> response.json())
   .then((responseJSON)=>{
